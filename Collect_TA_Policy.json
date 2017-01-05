@@ -1,0 +1,41 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1482917050000",
+            "Effect": "Allow",
+            "Action": [
+                "aws-portal:ViewAccount",
+                "aws-portal:ViewBilling",
+                "aws-portal:ViewPaymentMethods",
+                "aws-portal:ViewUsage"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Stmt1482917070000",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:GetMetricData",
+                "cloudwatch:GetMetricStatistics",
+                "cloudwatch:ListMetrics"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Stmt1482917099000",
+            "Effect": "Allow",
+            "Action": [
+                "trustedadvisor:*",
+                "support:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
